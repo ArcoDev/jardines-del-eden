@@ -1,0 +1,484 @@
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../assets/fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham-Light.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+  font-family: "Gotham";
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+  transition: all 1s ease-out;
+}
+
+/*Logo*/
+.img-logo {
+  width: 80%;
+  height: 80%;
+  padding: 20px 0;
+  object-fit: contain;
+  position: absolute;
+  z-index: 20;
+  top: 3%;
+}
+
+@media screen and (max-width: 1366px) {
+  .img-logo {
+    top: 1%;
+  }
+}
+
+/*navbar*/
+.icon-men {
+  color: #fff;
+  position: fixed;
+  background: none;
+  font-size: 40px;
+  top: 3%;
+  margin-left: 20px;
+  z-index: 30;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  display: flex;
+}
+
+.items {
+  width: 100vw;
+  height: 100vh;
+  background: #020202de;
+  position: fixed;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate3d(-180%, 0%, 0px);
+  transition: all 1s ease-out;
+}
+
+.anima-items {
+  transform: translate3d(0px, 0%, 0px);
+  transition: all 1s ease-out;
+}
+
+.items ul {
+  list-style: none;
+}
+
+.items ul a li {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  transition: all .5s;
+}
+
+.items ul a li:hover {
+  color: #339933;
+}
+
+/*Slider*/
+.carousel-inner {
+  height: 735px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-item img {
+  background-attachment: fixed;
+}
+
+.slider1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.slider2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.slider3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: auto;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.473);
+}
+
+/*titulos */
+.titulos {
+  color: #000;
+  font-size: 60px;
+  margin: 100px 0 50px 0;
+  font-family: "Gotham-Bold";
+}
+
+.div-gal {
+  width: 100%;
+  height: 100%;
+}
+
+.div-gal img {
+  width: 100%;
+  height: 100%;
+}
+
+.txt-gal {
+  font-size: 20px;
+  color: #000;
+  font-family: "Gotham-Bold";
+  margin: 10px 0;
+  display: none;
+}
+
+.servicios {
+  position: absolute;
+  z-index: 10;
+  width: 92%;
+  height: 230px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Gotham-Bold";
+  text-transform: uppercase;
+  background: rgba(0, 4, 0, 0.678);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.div-gal:hover .servicios {
+  opacity: 1;
+}
+
+.nosotros {
+  width: 100%;
+  height: auto;
+  background: #4bb44b;
+  padding: 30px 0;
+}
+
+.imgLogo {
+  background-image: url("../assets/img/LOGO_JARDINES-01.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tit-nosotros {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Gotham-Bold";
+  text-align: center;
+  padding: 30px;
+}
+
+.txt-nosotros {
+  padding: 0 150px;
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .txt-nosotros {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .txt-nosotros {
+    padding: 0 25px;
+  }
+}
+
+.caja-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .caja-nosotros {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .caja-nosotros {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caja-nosotros {
+    display: block;
+  }
+}
+
+.tit-mision, .tit-vision {
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Gotham-Bold";
+  padding: 30px 0;
+}
+
+.desc {
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 20px;
+  padding: 0 50px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1366px) {
+  .desc {
+    padding: 0 10px;
+  }
+}
+
+/*Servicios*/
+.crematorio {
+  border: 1px solid black;
+}
+
+.txt-servicios {
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.texto-serv {
+  font-size: 1.23rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  .texto-serv {
+    font-size: 1rem;
+  }
+}
+
+.paquetes {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .paquetes {
+    margin-top: 1rem;
+  }
+}
+
+.paquetes button {
+  width: 40%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .paquetes button {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .paquetes button {
+    font-size: 1rem;
+  }
+}
+
+/*Galeria*/
+.galeria {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 15px;
+  transition: all .4s ease-in-out;
+}
+
+.ultima {
+  width: 100%;
+  height: 550px;
+  transition: all .4s ease-in-out;
+}
+
+.galeria:hover,
+.ultima:hover {
+  transform: scale(1.03);
+}
+
+/* Contacto */
+.tit-con {
+  margin: 70px 0 50px 0;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.txt-conta {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .txt-conta {
+    font-size: 14px;
+  }
+}
+
+i {
+  margin: 0 20px 0 0;
+  font-size: 25px;
+  color: #339933;
+  display: flex;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+.footer {
+  background: #339933;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-inner {
+    height: unset !important;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .img-logo {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+  }
+  .imgLogo {
+    display: none;
+  }
+  .tit-nosotros {
+    font-size: 35px;
+    padding: 20px 0;
+  }
+  p.txt-nosotros {
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+  }
+  .tit-mision, .tit-vision {
+    font-size: 35px;
+  }
+  .desc {
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+  .titulos {
+    font-size: 27px;
+    margin: 20px 0;
+  }
+  .info {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  .icon-men {
+    font-size: 30px;
+    top: 5%;
+    right: 5%;
+    margin: 0;
+    background: #339933;
+    padding: 15px;
+  }
+  .icon-men p {
+    display: none;
+  }
+  iframe {
+    width: 320px;
+  }
+  .txt-gal {
+    display: block;
+  }
+  .txt-servicios {
+    margin: 0 0 10px 0;
+  }
+  .img-logo {
+    width: 90%;
+    height: 90%;
+    top: 5%;
+  }
+  .ultima {
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
